@@ -18,7 +18,7 @@ for (const i of frutas){  // i = valores atual do Set; frutas = nome do Set a se
     console.log(i)
 }
 
-// tentando simulando um Set com um Array
+// tentando simulando um Array com propiedades de um Set
 
 const MeuArray = simulandoSet()
 function simulandoSet(){
