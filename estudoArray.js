@@ -157,7 +157,12 @@ const pessoas = [
 ];
 
 const nomes = pessoas.map(p => p.nome);   // passa por todo o array e abre o objeto nome
-const maiores = pessoas.filter(p => p.idade > 21); // filtra pessoas que tem mais de 21 anos e retorna o dado inteiro
+const maiores = pessoas.filter(p => p.idade > 21); // filtra pessoas que tem mais de 21 anos e retorna o objeto do array referente
 
 console.log(nomes)
 console.log(maiores)
+
+ // Convertendo “array-like” em array real
+
+ const real = Array.from({ 0: "x", 1: "y", length: 2 },); // ["x", "y"]
+ console.log(real)
