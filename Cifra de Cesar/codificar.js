@@ -1,4 +1,4 @@
-let palavra = "Mangas"; // define uma variavel para palavra que eu quero cifrar
+let palavra = "bunda"; // define uma variavel para palavra que eu quero cifrar
 let resposta = criarCifra(palavra); // define uma variavel para o outpu da minha função 
 
 console.log(resposta) // Imprime no terminal a resposta da cifragem
@@ -24,7 +24,7 @@ function criarCifra(x) { // Cria uma function com o parametro x sendco puxado de
         for (let a = 0; a < 26; a++) { // repertição do 1 ao 26
             console.log(a + " - " + alfabeto[a])
             if (letra === alfabeto[a]) { // compara cada letra da minha palavra com todas as letras do alfabeto
-                let novaLetra = alfabeto[(a + 3) % 26]; // cria variavel para substituir a letra atual
+                let novaLetra = alfabeto[(a + 15) % 26]; // cria variavel para substituir a letra atual
                 letrasAprovadas += novaLetra; // adiciona a novaLetra a variavel letras Aprovadas
                 console.log(i+ " - " + letrasAprovadas)
             }
